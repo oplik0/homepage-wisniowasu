@@ -55,6 +55,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "@localnerve/sass-asset-functions": "^0.1.0",
     "autoprefixer": "^10.2.6",
     "device-detector-js": "^2.2.10",
     "handlebars-helpers": "^0.10.0",
@@ -66,7 +67,6 @@
     "lazysizes": "^5.3.2",
     "load-google-maps-api": "^2.0.2",
     "mobile-detect": "^1.4.5",
-    "node-sass-asset-functions": "^0.1.0",
     "postcss": "^8.3.5",
     "postcss-loader": "^6.1.0",
     "progressive-image.js": "^1.6.0",
