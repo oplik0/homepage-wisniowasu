@@ -4,8 +4,8 @@
   "description": "Strona główna dla Samorządu Uczniowskiego na Wiśniowej 56 w Warszawie",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --host 0.0.0.0",
-    "dev:open": "webpack-dev-server --host 0.0.0.0 --open",
+    "dev": "webpack-cli serve --host 127.0.0.1",
+    "dev:open": "webpack-cli serve --host 127.0.0.1 --open",
     "build": "webpack",
     "fix-code": "prettier-eslint --write 'src/**/*.{js,jsx}' ",
     "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss}' "
@@ -67,6 +67,7 @@
     "load-google-maps-api": "^2.0.2",
     "mobile-detect": "^1.4.5",
     "node-sass-asset-functions": "^0.1.0",
+    "postcss": "^8.3.5",
     "postcss-loader": "^6.1.0",
     "progressive-image.js": "^1.6.0",
     "resolve-url-loader": "^4.0.0",

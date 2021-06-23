@@ -138,7 +138,7 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
             options: {
               publicPath: './scss',
-              hmr: process.env.NODE_ENV === 'development',
+              //hmr: process.env.NODE_ENV === 'development',
             },
           },
           'css-loader',
@@ -225,7 +225,7 @@ module.exports = {
       version: json.version,
       minify: htmlMinifyOptions,
     }),
-    new CopyPlugin([{ from: './src/static' }]),
+    new CopyPlugin({patterns: [{ from: './src/static' }]}),
     new MinifyPlugin(),
   ],
   devServer: {
